@@ -14,6 +14,10 @@ npm run serve
 ```
 npm run build
 ```
+### 项目初始化
+    1.格式化项目，创建vue.config.js 设置端口及跨域
+    2.导入移动端适配文件 appview 
+    3.
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
