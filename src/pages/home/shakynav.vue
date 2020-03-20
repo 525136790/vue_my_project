@@ -37,7 +37,7 @@ export default {
             align-items: center;
             flex: 1;
             img{
-                width: 45%;
+                width: 40%;
             }
         }
     }
