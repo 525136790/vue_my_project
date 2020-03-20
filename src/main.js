@@ -7,6 +7,8 @@ import store from './store'
 import '../src/assets/appview/zepto.js'
 import '../src/assets/appview/remstyle.js'
 
+
+import 'swiper/css/swiper.css'
 //设置Mui
 import '../src/mui/css/mui.min.css'
 
