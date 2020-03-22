@@ -19,7 +19,9 @@ export default {
     name:'chosegoods',
     data(){
         return {
-            choseArr:[]
+            choseArr:[{
+                productDetail:[]
+            }]
         }
     },
     created(){
