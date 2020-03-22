@@ -16,6 +16,10 @@ import '../src/mui/css/mui.min.css'
 import '../src/assets/css/index.css'
 
 
+Vue.filter('formatPrice', function (value = 0) {
+	return Number(value).toFixed(2)
+})
+
 Vue.config.productionTip = false
 
 new Vue({

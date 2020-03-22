@@ -21,10 +21,7 @@ export default {
     //     }
     // },
     mounted(){
-        // axios.get('/api/h5web/productList').then(res=>{
-        // this.list = JSON.parse(res.data.data)
-        // // console.log(this.list)
-        // })
+       
         var mySwiper = new Swiper('.swiper-container', {
             autoplay: true,//可选选项，自动滑动
             loop : true,//循环

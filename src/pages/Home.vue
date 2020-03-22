@@ -54,6 +54,8 @@
                 </ul>
             </div>
         </div>
+        <Officegoods ></Officegoods>
+        <Chosegoods></Chosegoods>
     </div>
 </template>
 
@@ -61,12 +63,27 @@
 import Headernav from '../components/heardernav'
 import Banner from './home/banner'
 import Shakynav from './home/shakynav'
+import Officegoods from './home/officegoods'
+import Chosegoods from './home/chosegoods'
+import axios from 'axios'
 export default {
     name:'home',
+    data(){
+        return {
+            goodsArr:[],
+        }
+    },
     components:{
         Headernav,
         Banner,
-        Shakynav
+        Shakynav,
+        Officegoods,
+        Chosegoods
+    },
+    created(){
+        // axios.get('http://qstscoa.qstjt.cn/h5web/index').then(res=>{
+        //     console.log(JSON.parse(res.data.data))
+        // })
     }
 }
 </script>

@@ -9,7 +9,7 @@
             <span class="mui-tab-label">分类</span>
         </router-link>
         <router-link class="mui-tab-item" to='/carts' >
-            <span class="mui-icon carts" ><span class="mui-badge">0</span></span>
+            <span class="mui-icon carts" ><span class="mui-badge">{{$store.getters.totalcount}}</span></span>
             <span class="mui-tab-label">购物车</span>
         </router-link>
         <router-link class="mui-tab-item" to='/mine'>
