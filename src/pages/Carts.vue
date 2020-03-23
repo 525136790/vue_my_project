@@ -16,9 +16,9 @@
                         <div class='priceWarp'>
                             <div class='price'>￥<span>{{item.oldPrice}}</span></div>
                             <div class='countWarp'>
-                                <button v-show ='item.count != 0 ' @click ='$store.commit("countsub",item.id)'>-</button>
+                                <button v-show ='item.count != 0 ' @click ='$store.commit("countsub",item.uuid)'>-</button>
                                 <span>{{item.count}}</span>
-                                <button @click ='$store.commit("countadd",item.id)'>+</button>
+                                <button @click ='$store.commit("countadd",item.uuid)'>+</button>
                             </div>
                         </div>
                         

@@ -36,7 +36,7 @@ export default new Vuex.Store({
 			})
 		},
 		countsub(state,id){
-			let cartObj = state.goodsList.find((item)=>item.id==id);//找到购物车中对应的商品
+			let cartObj = state.goodsList.find((item)=>item.uuid==id);//找到购物车中对应的商品
 			cartObj.count--
 			// if(cartObj.count == 0){
 			// 	let index = state.goodsList.findIndex(item=>item.id==id);
@@ -44,7 +44,7 @@ export default new Vuex.Store({
 			// }
 		},
 		countadd(state,id){//数量增加
-			let cartObj = state.goodsList.find((item)=>item.id==id);//找到购物车中对应的商品
+			let cartObj = state.goodsList.find((item)=>item.uuid==id);//找到购物车中对应的商品
 			cartObj.count++
 		},
 	},
