@@ -40,7 +40,6 @@ export default {
        Headernav 
     },
     created(){
-       
         axios.get('http://qstscoa.qstjt.cn/h5web/getCategory').then(res=>{
         // console.log(JSON.parse(res.data.data))
         this.categoryArr = JSON.parse(res.data.data)

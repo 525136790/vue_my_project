@@ -3,7 +3,7 @@
         <div class="officeWarp" v-for='(item,index) in goodsArr.floorList' :key ='item.index'>
             <div class='tit'>
                 <h3>{{item.floorName}}</h3>
-                <span class='more'>更多好货<i></i></span>
+                <router-link :to="'/more/'+item.compUuid" class='more' tag='span'>更多好货<i></i></router-link>
             </div>
             <ul class='office_item' >
                 <router-link :to ="'/goodsdesc/'+list.uuid" tag='li' class='office_list' v-for ='list in item.productDetail' :key ='list.uuid'>

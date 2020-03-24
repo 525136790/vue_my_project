@@ -29,7 +29,7 @@ export default {
             this.choseArr =JSON.parse(res.data.data)
             // console.log(this.choseArr)
             this.choseArr = this.choseArr.heatSingel
-            console.log(this.choseArr[0].productDetail)
+            // console.log(this.choseArr[0].productDetail)
         })
     }
 

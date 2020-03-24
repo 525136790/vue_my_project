@@ -7,7 +7,11 @@ import store from './store'
 import '../src/assets/appview/zepto.js'
 import '../src/assets/appview/remstyle.js'
 
-
+//使用mint-ui
+import { Field } from 'mint-ui';
+import 'mint-ui/lib/style.css'
+Vue.component(Field.name, Field);
+// 设置swiper样式
 import 'swiper/css/swiper.css'
 //设置Mui
 import '../src/mui/css/mui.min.css'
@@ -21,6 +25,8 @@ Vue.filter('formatPrice', function (value = 0) {
 })
 
 Vue.config.productionTip = false
+
+
 
 new Vue({
   router,
