@@ -41,7 +41,11 @@ router.beforeEach((to,from,next)=>{
   if(to.path === '/mine' || to.path === '/carts'){
     const tokenStr = window.sessionStorage.getItem('token')
   //如果不存在，就强制跳转至登录页面
-  if(!tokenStr) return  next({ path: '/login',query: { redirect: to.fullPath }})
+  if(!tokenStr) {
+    window.sessionStorage.setItem('path',to.path);
+    return next('/login')
+  }
+  // if(!tokenStr) return  next({ path: '/login',query: { redirect: to.fullPath }})
   //如果存在，就放行 
   next()
   }

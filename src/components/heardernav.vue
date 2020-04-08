@@ -1,7 +1,7 @@
 <template>
     <header id="header" class="mui-bar mui-bar-nav">
         <a class="logo"  v-if='active==1'></a>
-        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" v-else></a>
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" v-else @click='$router.go(-1)'></a>
        <div class="search">
 			<input type="search" class="mui-input-clear" placeholder="请输入关键词">
             <span class='mui-icon mui-icon-search'></span>

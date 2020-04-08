@@ -60,8 +60,9 @@ export default {
                     //  1.1 项目中除了登录之外的其他APi 接口 必须在登录之后才能访问
                     //  1.2 token 只应在当前网站打开期间生效，所以要保存在sessionAtorage 中
                     window.sessionStorage.setItem('token',result.data.token);
-                    //2. 通过编程式导航跳转到后台主页，路由地址是 /home
-                    this.$router.push('/home')
+					//2. 通过编程式导航跳转到后台主页，路由地址是 /home
+					var url = window.sessionStorage.getItem('path')
+                    this.$router.push(url)
                 }
         }
     }

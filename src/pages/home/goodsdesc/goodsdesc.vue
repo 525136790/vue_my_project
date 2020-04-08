@@ -1,6 +1,6 @@
 <template>
     <div class='goodsDesc'>
-        <Headernav :active = 1></Headernav>
+        <Headernav :active = 2></Headernav>
         <div>
             <img width="100%" :src="goods.imgurl" alt="">
 
